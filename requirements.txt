@@ -9,3 +9,4 @@ plotly
 Pillow
 google-generativeai
 opencv-python-headless
+shap
