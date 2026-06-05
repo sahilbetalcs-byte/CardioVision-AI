@@ -1,0 +1,116 @@
+{
+  "best_model": "XGBoost",
+  "models": {
+    "Logistic Regression": "logistic_regression.pkl",
+    "Decision Tree": "decision_tree.pkl",
+    "Random Forest": "random_forest.pkl",
+    "XGBoost": "xgboost.pkl",
+    "SVM": "svm.pkl",
+    "Neural Network": "neural_network.pkl"
+  },
+  "metrics": {
+    "Logistic Regression": {
+      "f1": 0.9871244635193134,
+      "roc_auc": 0.9981527093596059,
+      "confusion_matrix": [
+        [
+          82,
+          2
+        ],
+        [
+          1,
+          115
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "f1": 0.9696969696969697,
+      "roc_auc": 0.983425697865353,
+      "confusion_matrix": [
+        [
+          81,
+          3
+        ],
+        [
+          4,
+          112
+        ]
+      ]
+    },
+    "Random Forest": {
+      "f1": 0.9871244635193134,
+      "roc_auc": 0.9991789819376027,
+      "confusion_matrix": [
+        [
+          82,
+          2
+        ],
+        [
+          1,
+          115
+        ]
+      ]
+    },
+    "XGBoost": {
+      "f1": 0.9913793103448276,
+      "roc_auc": 0.999076354679803,
+      "confusion_matrix": [
+        [
+          83,
+          1
+        ],
+        [
+          1,
+          115
+        ]
+      ]
+    },
+    "SVM": {
+      "f1": 0.9702127659574468,
+      "roc_auc": 0.9969211822660099,
+      "confusion_matrix": [
+        [
+          79,
+          5
+        ],
+        [
+          2,
+          114
+        ]
+      ]
+    },
+    "Neural Network": {
+      "f1": 0.982905982905983,
+      "roc_auc": 0.9936371100164203,
+      "confusion_matrix": [
+        [
+          81,
+          3
+        ],
+        [
+          1,
+          115
+        ]
+      ]
+    }
+  },
+  "features": [
+    "age",
+    "gender",
+    "chestpain",
+    "restingBP",
+    "serumcholestrol",
+    "fastingbloodsugar",
+    "restingrelectro",
+    "maxheartrate",
+    "exerciseangia",
+    "oldpeak",
+    "slope",
+    "noofmajorvessels"
+  ],
+  "dataset_size": 1000,
+  "class_balance": {
+    "no_heart_disease": 420,
+    "heart_disease": 580
+  }
+}
