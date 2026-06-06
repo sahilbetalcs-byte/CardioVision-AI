@@ -1233,7 +1233,7 @@ with tabs[3]:
                 trend_map[row["patient_name"]] = "→ stable"
         filtered["Risk Trend"] = filtered["patient_name"].map(trend_map)
 
-        styled = filtered.style.applymap(color_risk, subset=["risk_level"])
+        styled = filtered.style.map(color_risk, subset=["risk_level"])
         st.dataframe(styled, use_container_width=True)
         st.download_button("Download History as CSV", filtered.to_csv(index=False), "patient_history.csv", "text/csv")
 
