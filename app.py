@@ -1092,7 +1092,7 @@ with tabs[2]:
             progress_text.text = ""
             st.success("Bulk prediction completed!")
 
-            styled = results.style.applymap(color_risk, subset=["Risk Level"])
+            styled = results.style.map(color_risk, subset=["Risk Level"])
             st.dataframe(styled, use_container_width=True)
 
             csv_bytes = results.to_csv(index=False)
